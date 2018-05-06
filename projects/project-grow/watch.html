@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="icon" href="https://image.flaticon.com/icons/png/128/188/188333.png">
+  <title>Project G.R.O.W.</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="project-grow-css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="project-grow-css/blog-home-non-fixed.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-green">
+    <div class="container">
+      <a class="navbar-brand" href="">Project G.R.O.W. | Giving Resources for Organic Wellness</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="project-grow-index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plant_progress.html">Progress</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="watch.html">Watch<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <h1 class="my-4"><b>Watch This Plant Grow!</b>
+      <br><small><b>Viola</b> (Johnny Jump Up) | <b>Day <span id="days_since"></span></b> (Planted on 4/8/18)</small></br>       
+    </h1>
+
+      <object data="http://172.114.7.105:8081" type="image/jpg">
+        <img src="https://pre00.deviantart.net/10fd/th/pre/f/2015/248/c/d/picarto_stream__offline_by_echo_the_alpha-d8nndct.png"></img>
+      </object>
+      <p>The live stream light is turned off during certain times of the day (to save energy)...sorry for the inconvenience.</p>
+      <p>The live stream light may change color depending on which is perfect for the growth stage the plant is currently on.</p>
+
+    <!-- Search Widget -->
+    <div class="card my-4">
+      <h3 class="card-header">Current Plant Information</h3>
+      <div class="card-body">
+        <h5 class="card-body"><a href="https://www.google.com/search?q=viola+johnny+jump+up&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjj3cOYk6zaAhVSG6wKHVWpC2UQ_AUICygC&biw=1920&bih=938#imgrc=M7YrwieHnkKgsM:">Viola pedunculata</a>, the California golden violet, Johnny jump up, or yellow pansy, is a perennial yellow wildflower of the coast and coastal ranges in California and northwestern Baja California. The common name "Johnny jump up" is usually associated with Viola tricolor however, the introduced garden annual.</h5>
+        <h5 class="card-body">The plant grows on open, grassy slopes, in chaparral habitats, and in oak woodlands, from sea level to around 3,280 feet (1,000 m). It prefers part shade, but will tolerate sun in many locations.</h5>
+      </div>
+    </div>
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-green">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; zanderlx 2018</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="project-grow-jquery/jquery.min.js"></script>
+  <script src="project-grow-js/bootstrap.bundle.min.js"></script>
+  <script>
+    var initialDate = new Date(2018, 3, 8); // Dec 1st 2012
+    var now = Date.now();
+    var difference = now - initialDate;
+    var millisecondsPerDay = 24 * 60 * 60 * 1000;
+    var daysSince = Math.floor(difference / millisecondsPerDay);
+
+// Write result to HTML
+document.getElementById('days_since').innerHTML = daysSince;
+</script>
+
+</body>
+
+</html>
