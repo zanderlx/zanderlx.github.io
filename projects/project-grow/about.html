@@ -18,9 +18,38 @@
   <!-- Custom styles for this template -->
   <link href="project-grow-css/blog-home-non-fixed.css" rel="stylesheet">
 
+  <!-- Start style for 'Go To Top' Button -->
+  <style>
+
+    
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+        box-shadow: 1px 1px 5px grey;
+      }
+    
+      #myBtn:hover {
+        background-color: #555;
+      }
+    </style>
+    <!-- End style for 'Go To Top' Button -->
+
 </head>
 
 <body>
+  <!-- Button for going back to top -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-green">
@@ -68,7 +97,7 @@
           </h5>
           <div class="card-body">
             <h5 class="card-title">
-              <i>General background...Why am I interested in this?</i>
+              <i><b>General background...Why am I interested in this?</b></i>
             </h5>
             <p class="card-text">
               <p>
@@ -82,7 +111,7 @@
               </p>
               <br>
               <h5>
-                <i>What are some questions I want to answer by doing this project?</i>
+                <i><b>What are some questions I want to answer by doing this project?</b></i>
               </h5>
               <p>
                 In terms of research, I had several questions in the sustainable potential that the results of this project had to offer.
@@ -104,11 +133,11 @@
               </p>
               <br>
               <h5>
-                <i>What am I proposing as a project and what I am going to do so solve the stated problems?</i>
+                <i><b>What am I proposing as a project and what I am going to do so solve the stated problems?</b></i>
               </h5>
               <p>
-                To solve the problems stated previously, I intend to make a contraption that performs all the hard work for me - water and
-                give light to the plant. However, before that happens, I actually still need to learn and develop the system
+                To solve the problems stated previously, I intend to make a contraption that performs all the hard work for me - give water and
+                light to the plant. However, before that happens, I actually still need to learn and develop the system
                 that the this project will run on. This appears to be one drawback to the system in that the device or devices
                 need to be implemented before making everything automated. I will need to buy the components required for
                 developing everything that makes the device operational and then start experimenting with different ways
@@ -125,7 +154,7 @@
               </p>
               <br>
               <h5>
-                <i>What do I expect to learn from this project?</i>
+                <i><b>What do I expect to learn from this project?</b></i>
               </h5>
               <p>
                 In terms of technical knowledge, I expect to learn what a raspberry pi is capable of and how I can use the internet of things
@@ -154,7 +183,7 @@
           </h5>
           <div class="card-body">
             <h5 class="card-title">
-              <i>What is my research plan?</i>
+              <i><b>What is my research plan?</b></i>
             </h5>
             <p class="card-text">
               First of all, I would like to mention that the first step to my plan has already been accomplished. If you haven't guessed
@@ -163,7 +192,7 @@
               <br> To be more specific, that platform would be this website! Developing a website will allow me to dynamically
               showcase my research and even provide me with experience in web development.
               <br>
-              <br> The complete overview of my research plan is as follows:
+              <br><b>The complete overview of my research plan is as follows:</b>
               <ul>
                 <b>Step 1:</b> Develop a website for showcasing my research progress.</ul>
               <ul>
@@ -185,7 +214,7 @@
               <ul>
                 <b>Step 10:</b> Conclude the the experiment and review the results of the experiment.</ul>
             </p>
-            
+
             </h5>
             <p class="card-text">
               The following information will describe how I set up and prepared for this experiment which includes the items bought for
@@ -194,31 +223,98 @@
               <br>
               <b>Main Raspberry Pi and Components List</b>
               <br>
-              <ul>1 x Raspberry Pi 3 (with SD card)</ul>
-              <ul>1 X Raspberry Pi Camera Module V2</ul>
-              <ul>1 X 3-6V Mini Micro Submersible Water Pump</ul>
-              <ul>3 x Solderless Ribbon Jumper Wires</ul>
-              <ul>5 X Soil Moisture Sensor</ul>
-              <ul>1 X 4-Channel Relay Module</ul>
-              <ul>1 x 10-ft Silcone Airline Tubing</ul>
-              <ul>1 x Multi-Joint Desk Lap with Metal Clamp</ul>
-              <ul>1 x LED Wi-Fi Dimmable Color Smart Light Bulb (Compatible with Alexa)</ul>
-              <ul>1 x Viola, Johnny Jump Up Seeds</ul>
-              <ul>1 x Standard Plastic Plant Pot</ul>
+              <ul>1 x Raspberry Pi 3 (Already Owned, Link Still Provided)
+                <a href="https://www.amazon.com/Raspberry-Pi-RASPBERRYPI3-MODB-1GB-Model-Motherboard/dp/B01CD5VC92/ref=sr_1_1?ie=UTF8&qid=1525937490&sr=8-1&keywords=raspberry+pi+3"
+                  target="_blank">[Link]</a>
+              </ul>
+              <ul>1 X Raspberry Pi Camera Module V2
+                <a href="https://www.amazon.com/gp/product/B01ER2SKFS/ref=oh_aui_detailpage_o06_s00?ie=UTF8&psc=1" target="_blank">[Link]</a>
+              </ul>
+              <ul>1 X 3-6V Mini Micro Submersible Water Pump
+                <a href="https://www.amazon.com/gp/product/B01LWQCXEL/ref=oh_aui_detailpage_o05_s01?ie=UTF8&psc=1" target="_blank">[Link]</a>
+              </ul>
+              <ul>3 x Solderless Ribbon Jumper Wires
+                <a href="https://www.amazon.com/gp/product/B01MS9GY7W/ref=oh_aui_detailpage_o05_s01?ie=UTF8&psc=1" target="_blank">[Link]</a>
+              </ul>
+              <ul>1 X Soil Moisture Sensor (Came with extras)
+                <a href="https://www.amazon.com/gp/product/B00ZR3B60I/ref=oh_aui_detailpage_o05_s01?ie=UTF8&psc=1" target="_blank">[Link]</a>
+              </ul>
+              <ul>1 X 4-Channel Relay Module
+                <a href="https://www.amazon.com/gp/product/B0057OC5O8/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1" target="_blank">[Link]</a>
+              </ul>
+              <ul>1 x 10-ft Silcone Airline Tubing
+                <a href="https://www.amazon.com/gp/product/B0002AQI9A/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1" target="_blank">[Link]</a>
+              </ul>
+              <ul>1 x Multi-Joint Desk Lap with Metal Clamp
+                <a href="https://www.amazon.com/gp/product/B00HX2EVPS/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1" target="_blank">[Link]</a>
+              </ul>
+              <ul>1 x LED Wi-Fi Dimmable Color Smart Light Bulb (Compatible with Alexa)
+                <a href="https://www.amazon.com/gp/product/B073NW17Y5/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1" target="_blank">[Link]</a>
+              </ul>
+              <ul>1 x Viola, Johnny Jump Up Seeds
+                <a href="https://www.amazon.com/TWB-Smart-Compatible-Accessories-Automation/dp/B073NW17Y5/ref=sr_1_2?ie=UTF8&qid=1521643107&sr=8-2&keywords=wifi+light+bulbs+full+spectrum#customerReviews"
+                  target="_blank">[Link]</a>
+              </ul>
+              <ul>1 x Standard Plastic Plant Pot (Already Owned)</ul>
+              <ul>1 x Custom 5V USB power cable (ALready Owned)</ul>
+              <div>
+                <img class="card-img-top" height="400" src="images/components.JPG" alt="Card image cap">
+                <p>Raspberry Pi and components used in the project</p>
+              </div>
               <br>
-              <b>Set Up</b>
-                  <p>
-                    My set up involved placing everything at an isolated location which was a nearby desk. I initially used a tutorial to connect my raspberry pi with the components as I did
-                    not entirely know what I was doing. 
-                    <br>
-                    <br>
-                    I started by making connections to certain parts of the raspberry pi with the jumper wires. I needed a relay to use connect the water pump to the sensor and the raspberry pi. 
-                    Whenever the water moisture sensor sent a negative signal, it meant that the soil needed watering and would tell the raspberry pi to activate the water pump. I used a hot glue
-                    gun to attach the water pipe to the opening of the pump so that the water can flow through. I poked small holes in the pipe so that when the water traveled down the pipe it
-                    would spray or drip out. I wrapped the pipe around the pot and positioned it above the soil so that when the water flowed through, the water would fall towards the seeds. I used
-                    a python script to automate the watering of the plant which was constantly running while the raspberry pi was on. I set up the raspeberry pi camera to point towards the plant
-                    so viewers can watch the plant grow if they wanted to.
-                  </p>
+              <b>Set Up (Part 1)</b>
+              <p>
+                My set up involved placing everything at an isolated location which was a nearby desk. I initially used a tutorial to connect
+                my raspberry pi with the components as I did not entirely know what I was doing.
+                <br>
+                <br> With the help of my two friends,
+                <b>Rudy Sandoval</b> and
+                <b>Anthony Cuevas</b>, I was able to set up all the components with the raspberry pi.
+                <br>
+                <br> We started by making connections to certain parts of the raspberry pi with the jumper wires. I used the
+                relay to connect the water pump to the moisture sensor and the raspberry pi. The sensitivity of the moisture
+                sensor could be adjusted by an actuator on the water sensor. Whenever the water moisture sensor sent a negative
+                signal, it meant that the soil needed watering and would tell the raspberry pi to activate the water pump.
+                We soldered cables together to improve the length of the cables and also soldering a stripped USB power cable
+                to connect to the relay.
+                <div>
+                  <img class="card-img-top" height="400" src="images/original-project-setup.jpg" alt="Card image cap">
+                  <p>Model of Connections between all the components to make everything operational</p>
+                </div>
+                <div>
+                  <img class="card-img-top" height="400" src="images/setup1.JPG" alt="Card image cap">
+                  <p>Starting to connect the components to the raspberry pi</p>
+                </div>
+                <b>Set Up (Part 2)</b>
+                <br> Using a hot glue gun, we attached the pipe to the output hole of the water pump. I poked small holes in
+                the pipe so that when the water traveled down the pipe it would spray or drip out. I wrapped the pipe around
+                the pot and positioned it above the soil so that when the water flowed through, the water would fall towards
+                the seeds.
+                <br>
+                <div>
+                  <img class="card-img-top" height="400" src="images/irrigation-overview.JPG" alt="Card image cap">
+                  <p>Irrigation overview over the soil</p>
+                </div>
+                <b>Set Up (Part 3)</b>
+                <br>I used a python script to automate the watering of the plant which was constantly running while the raspberry pi was on.
+                I set up a 24/7 live stream with the raspberry pi camera so that anyone can view the plant's progress live.
+                The stream can be viewed by visiting the
+                <a href="watch.html">watch</a> tab in the navigation bar at the top of the website.
+                <div>
+                  <img class="card-img-top" height="400" src="images/setup-2.JPG" alt="Card image cap">
+                  <p>Developing the python script for the automatic watering system</p>
+                </div>
+                <b>Set Up (Part 4)</b>
+                <br> Next was the lighting system for the plant. I used the LED Smart Lightbulb fixated to a desk lamp to illuminate
+                the experimental group when indoors. By using an LED light bulb I was able to use less electricity than another
+                bulb. On top of being energy efficient, I was also able to connect the light bulb to Alexa and schedule the
+                lights to turn on and off during certain times of the day (IoT).
+                <br>
+                <br> That pretty much sums up the set-up I had for this project.
+                <br>
+                <br> The original set-up I followed can be found at the following link:
+                <a href="http://www.cyber-omelette.com/2017/09/automated-plant-watering.html">Original Set-Up</a>
+              </p>
             </p>
           </div>
         </div>
@@ -245,11 +341,12 @@
               <br> After calibrating the water sensor to a suitable water moisture setting, I turned on the automatic watering
               in the raspberry pi and let it get to work.
               <br>
-              <br> From then on, I pretty much left the system running for more than a month while updating the plant progress
-              section with updates which can be viewed by clicking the link below.
+              <br> From then on, I pretty much left the system running for more than a month while updating the
+              <a href="plant_progress.html">plant progress</a>
+              section with updates on the plant's growth.
               <br>
               <br>
-              <a class="nav-link" href="plant_progress.html">Go to plant progress</a>
+              <p>More information on implementation can be found by clicking the plant progress tab</p>
             </p>
           </div>
         </div>
@@ -261,13 +358,13 @@
           </h5>
           <div class="card-body">
             <h5 class="card-title">
-              <i>Outcomes and Experience</i>
+              <i><b>Outcomes and Experience</b></i>
             </h5>
             <p class="card-text">
               <div>
                 <img class="card-img-top" height="400" src="images/viola-growth-chart.png" alt="Card image cap">
               </div>
-              The above graph shows quantitative data for the growth rate for the experimental and control group. As you can see, the experimental
+              The graph above shows quantitative data for the growth rate for the experimental and control group. As you can see, the experimental
               group grew significantly faster than the control group.
               <br>
               <br> Both plants then started to grow at a reasonable paste but the experimental group was always taller than the
@@ -275,32 +372,33 @@
             </p>
             <br>
             <h5 class="card-title">
-              <i>Experience</i>
+              <i><b>Experience</b></i>
             </h5>
             <p>
               As soon as I started Day 1, I was excited to see the outcome of the experiment. I did still need to water the control group
               every other day while the experimental group was being watered automatically based on the moisture of the soil.
               <br>
               <br> It was a rather quick experience as one month goes by fast. Every day, I would wake up to see the proress
-              of the plants and was fascinated by the growth of each of them.
+              of the plants and was fascinated by how much they've grown.
               <br>
               <br> I hope to try this experiment again with different methods and constraints so that I may see a different outcome
               in the future.
             </p>
             <br>
             <h5 class="card-title">
-              <i>Research Question Answers</i>
+              <i><b>Research Question Answers</b></i>
             </h5>
             <p>
               In response to the research questions, I believe the following information describes the outcome of the experiment
               <br>
-              <li>The experimental group grew faster than I expected which is a good sign</li>
-              <li>Using my device, I was able to take care of my plant autonomously</li>
-              <li>The amount of water used was approximately 1 gallon (1 quart plastic refilled 4 times)</li>
-              <li>Not sure about the specifications of electricity usage but considering I used an LED light bulb that turns
-                of during certain times of the day, I would say it would be low</li>
-              <li>This has the potential to become part of a larger scale, but would need significant changes to the components
-                and method of irrigation</li>
+              <ul class="my-4">
+                  <li>The experimental group grew faster than I expected which is a good sign</li>
+                  <li>Using my device, I was able to take care of my plant autonomously with minimal damage</li>
+                  <li>The amount of water used was approximately 1 gallon (1 quart plastic refilled 4 times), thus, using less water resources than the manually watering</li>
+                  <li>Using an LED light uses less power, thus, reducing amount of energy usage</li>
+                  <li>This has the potential to become part of a larger scale, but would need significant changes to the components
+                    and method of irrigation</li>
+                </ul>
             </p>
           </div>
         </div>
@@ -312,7 +410,7 @@
           </h5>
           <div class="card-body">
             <h5 class="card-title">
-              <i>What Worked Well?</i>
+              <i><b>What Worked Well?</b></i>
             </h5>
             <p class="card-text">
               I believe that this research experiment was a success even with minor downsides. This experiment exhibited the potential
@@ -321,7 +419,7 @@
             </p>
             <br>
             <h5 class="card-title">
-              <i>Unexpected Outcomes</i>
+              <i><b>Unexpected Outcomes</b></i>
             </h5>
             <p class="card-text">
               The main thing that surprised me was that I had to occasionally change the water moisture sensor as it kept getting corroded
@@ -334,12 +432,13 @@
             </p>
             <br>
             <h5 class="card-title">
-              <i>Lessons Learned</i>
+              <i><b>Lessons Learned</b></i>
             </h5>
             <p class="card-text">
-              There were minor drawbacks when I was conducting this experiment which I will definitely take into account the next time I perform this experiment. Next
-              time I will use a water proof water moisture sensor to prevent corrosion. I will also test the irrigation system before I start planting to make sure that
-              the position in which the water hits the soil and seeds is optimal.
+              There were minor drawbacks when I was conducting this experiment which I will definitely take into account the next time
+              I perform this experiment. Next time I will use a water proof water moisture sensor to prevent corrosion. I
+              will also test the irrigation system before I start planting to make sure that the position in which the water
+              hits the soil and seeds is optimal.
             </p>
           </div>
         </div>
@@ -389,7 +488,8 @@
         <div class="card my-4">
           <h5 class="card-header">Recent Update 5/9/18</h5>
           <div class="card-body">
-            The project has concluded but I will continue with autonomously growing the plant since it hasn't fully grown yet. I hope to repeat this project in the near future with similar or even better outcomes.
+            The project has concluded but I will continue with autonomously growing the plant since it hasn't fully grown yet. I hope
+            to repeat this project in the near future with similar or even better outcomes.
           </div>
         </div>
 
@@ -412,6 +512,24 @@
   <!-- Bootstrap core JavaScript -->
   <script src="project-grow-jquery/jquery.min.js"></script>
   <script src="project-grow-js/bootstrap.bundle.min.js"></script>
+  <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+    
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("myBtn").style.display = "block";
+        } else {
+          document.getElementById("myBtn").style.display = "none";
+        }
+      }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
 
 </body>
 
